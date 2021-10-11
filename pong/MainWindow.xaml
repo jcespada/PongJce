@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:pong"
         mc:Ignorable="d"
-        Title="CojePong" Height="500" Width="800" Background="Black"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        Title="PongJce" Height="500" Width="800" Background="Black"
         KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
     <Grid>
         <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Text="{Binding Score}" Foreground="White" FontSize="60" FontFamily="Consolas" Margin="0,40,0,0"/>
