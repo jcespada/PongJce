@@ -1,0 +1,19 @@
+﻿<Window x:Class="pong.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pong"
+        mc:Ignorable="d"
+        Title="CojePong" Height="500" Width="800" Background="Black"
+        KeyDown="Window_KeyDown" KeyUp="Window_KeyUp">
+    <Grid>
+        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Top" Text="{Binding Score}" Foreground="White" FontSize="60" FontFamily="Consolas" Margin="0,40,0,0"/>
+        <Line X1="395" X2="395" Y1="30" Y2="450" StrokeThickness="10" Stroke="White" StrokeDashArray="1"/>
+        <Polygon Points="5,20 795,20 795,30 5,30" Fill="White"/>
+        <Polygon Points="5,430 795,430 795,440 5,440" Fill="White"/>
+        <Polygon Points="{Binding Ball.Position}" Fill="White"/>
+        <Line X1="{Binding Player2.X}" X2="{Binding Player2.X}" Y1="{Binding Player2.Y1}" Y2="{Binding Player2.Y2}" StrokeThickness="10" Stroke="White"/>
+        <Line X1="{Binding Player1.X}" X2="{Binding Player1.X}" Y1="{Binding Player1.Y1}" Y2="{Binding Player1.Y2}" StrokeThickness="10" Stroke="White"/>
+    </Grid>
+</Window>
