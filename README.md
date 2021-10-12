@@ -1,2 +1,2 @@
 # PongJce
-stupid wpf pong game
+Simple .NET WPF Pong game for single player.
